@@ -1,6 +1,6 @@
 const { models } = require("mongoose");
-const UserRouter = require("./UserRauts");
 const { getAllUsers } = require("../controllers/UserStusend");
+const UserRouter = require("./UserRouter");
 
 const Ruter=[
     UserRouter
