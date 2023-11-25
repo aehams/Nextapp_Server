@@ -33,8 +33,8 @@ const isUserExist=async(req, res)=>{
   }
 
 const creatNewUser = async (req, res) => {
+  console.log("body -> ",body);
     const canCreat= await IsUserExist(req.body.ID,).then((v)=>!v)
-    console.log(canCreat);
     if (canCreat) {
       userModule.create({
         ID: req.body.ID,
